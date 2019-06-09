@@ -1,0 +1,12 @@
+<p>
+  about weather in Taipei!
+</p>
+
+
+<ul *ngIf="weathers">
+  <li *ngFor="let weather of weathers.result.results">
+    <p>{{ weather.dataTime }}</p>
+    <p>{{ weather.locationName }}</p>
+    <p>{{ weather.lat }} </p>
+  </li>
+</ul>
